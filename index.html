@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/serif.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,12 +21,418 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		
+		<style type="text/css">
+		    ul {
+              margin: 0;
+            }
+            ul.dashed {
+              list-style-type: none !important;
+            }
+            ul.dashed > li {
+              text-indent: -5px;
+            }
+            ul.dashed > li:before {
+              content: "\2014\a0";
+              text-indent: -5px;
+            }
+            
+            img {
+                border: 0 !important;
+                box-shadow: none !important;
+            }
+            
+            #comparison-table {
+                font-size: 70%;
+                text-align: center;
+            }
+            #comparison-table td {
+                text-align: center;
+                padding: 0.8em;
+            }
+            #comparison-table tr.fragment td {
+                border-bottom: 0px !important;
+            }
+            #comparison-table tr.fragment.visible td  {
+                border-bottom: 1px solid !important;
+            }
+            
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			    
+		        <section>
+			        <section data-background-image="img/slide-backgrounds/plant.jpg" data-background-opacity="0.6" 
+			            data-background-color="black" style="color:white">
+			            <ul class="dashed">
+			                <li>USSD service</li>
+			                <li>Integration with 2waySMS</li>
+			                <li>Pilot structure</li>
+			                <li>Engagement strategies</li>
+			            </ul>
+			        </section>
+			        
+			        <section>
+		                <small>
+		                Tabs to open before presentation:
+		                <ul class="dashed">
+		                    <li>Admin site</li>
+		                    <li>USSD usage viz</li>
+		                    <li>Crossfilter</li>
+		                    <li>Africastalking USSD number availability</li>
+		                </ul>
+		                </small>
+		            </section>
+	            </section>
+				
+				<section>
+				    <ul>
+				         <table><tr>
+				            <td style="vertical-align:middle"><img src="img/ussd-bsnl.jpg" style="height:100%; width: auto;"></td>
+				            <td style="vertical-align:top; padding-top:1em">
+				                <h3>USSD</h3>
+				                <ul class="dashed">
+				                    <li>Works on every phone</li>
+				                    <li class="fragment">Available in Eastern Africa</li>
+				                    <li class="fragment">Familiar: *100# and mPesa</li>
+				                </ul>
+				            </td>
+				         </tr></table>
+				    </ul>
+				</section>
+				
+				<section>
+				    <section data-background-image="img/icow-screen.jpg" data-background-size="cover" style="color:white">
+				        <div class="stretch"></div>
+				        <div style="background:rgba(20,20,20,0.5);padding:0.5em">
+            				Example:<br>
+            				iCow &mdash; *285#
+        				</div>
+    				</section>
+    				<section>
+    				    <h3>iCow &mdash; *285#</h3>
+    				    <div>
+    				        <img src="img/icow-1.jpg" style="width:23%">
+                            <img src="img/icow-2.jpg" style="width:23%">
+                            <img src="img/icow-3.jpg" style="width:23%">
+                            <img src="img/icow-4.jpg" style="width:23%">
+    				    </div>
+    				</section>
+				</section>
+				
+				<section data-background-color="#fff">
+			        <section>
+				        <h3>Concept: Community USSD Line</h3>
+				        <img class="stretch" style="box-shadow:none" src="img/concept.jpg">
+				    </section>
+				</section>
+				
+				<section>
+				    <section>
+                        <table id="comparison-table">
+                            <tr>
+                                <td><h3>SMS</h3></td>
+                                <td><h3>USSD</h3></td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Unstructured</td>
+                                <td>Structured</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Push + Pull</td>
+                                <td>Pull only</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Message stays on phone</td>
+                                <td>Leaves no trace</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>User waits for reply</td>
+                                <td>Instant response</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>&mdash;</td>
+                                <td>Limited input length</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Affordances: prompting</td>
+                                <td>Affordances: menu options</td>
+                            </tr>
+                        </table>
+                    </section>
+                   
+				</section>
+				
+				<section data-background-color="white">
+			         <h3>USSD is good at:</h3>
+			         <ul class="dashed">
+			            <li>Providing information:
+			                <blockquote style="width:90%;background-color:#EEE">
+			                    <ul class="dashed" style="font-size:75%; font-style:italic;">
+			                        <li>What are Ol Pejeta's offerings?</li>
+			                        <li>How can I benefit?</li>
+			                        <li>How do I access the programs?</li>
+			                    </ul>
+			                </blockquote>
+			                <small>&mdash; Instructions, ag extension</small>
+			            </li>
+			            <li><div style="display:inline-block; vertical-align:top">
+			                Collecting structured input<br>
+			                <small>Surveys, booking services</small>
+			            </div></li>
+
+			         </ul>
+				</section>
+				
+				<section>
+				    <section data-background-image="img/slide-backgrounds/jiko.jpg", data-background-opacity="1" 
+				        data-background-color="black" style="color:white">
+				        <div style="background-color:rgba(0,0,0,0.7); padding: 30px">
+				        <h3 style="color:white">Pilot 1: Jiko Program</h3>
+				        <ul class="dashed">
+				            <li>Information
+				                <ul class="dashed">
+				                    <li>How to get one</li>
+				                    <li>How to use</li>
+				                    <li>How to maintain</li>
+				                </ul>
+				            </li>
+				            <li>Request service</li>
+				            <li>Accountability?</li>
+				            <li>Manage supply chain?</li>
+				        </ul>
+				        </div>
+				    </section>
+				    
+				    <section data-background-image="img/slide-backgrounds/bus.jpg", data-background-opacity="1" 
+				        data-background-color="black" style="color:white">
+				        <div style="background-color:rgba(0,0,0,0.7); padding: 30px">
+				        <h3 style="color:white">Pilot 2: Request Bus Trips</h3>
+				        <ul class="dashed">
+				            <li>On USSD, tell us:
+				                <ul class="dashed">
+				                    <li>Which community / school</li>
+				                    <li>How many people</li>
+				                    <li>Requested date</li>
+				                </ul>
+				            </li>
+				            <li>Steven calls you back to confirm</li>
+				        </ul>
+				        </div>
+				    </section>
+				    
+	                <section data-background-image="img/slide-backgrounds/school.jpg", data-background-opacity="1" 
+				        data-background-color="black" style="color:white">
+				        <div style="background-color:rgba(0,0,0,0.5); padding: 30px">
+				        <h3 style="color:white">Pilot 3: Bursaries</h3>
+				        <ul class="dashed">
+				            <li>How to apply</li>
+				            <li>Important dates</li>
+				            <li>Get more information</li>
+				        </ul>
+				        </div>
+				    </section>	
+				    
+				    <section data-background-image="img/slide-backgrounds/cows.jpg", data-background-opacity="1" 
+				        data-background-color="black" style="color:white">
+				        <div style="background-color:rgba(0,0,0,0.5); padding: 30px">
+				        <h3 style="color:white">Pilot 4: Cattle Extension</h3>
+				        <ul class="dashed">
+				            <li>Order supplies from Ol Pejeta</li>
+				            <li>Directory of external suppliers</li>
+				            <li>Nutrition information</li>
+				            <li>Meeting dates</li>
+				            <li>Restricted to Mutara, Tangi-Nyeusi, Ex-Rock</li>
+				        </ul>
+				        </div>
+				    </section>			    
+				</section>
+				
+				<section data-background-image="img/slide-backgrounds/road1.jpg", data-background-opacity="0.3">
+				    Demo 1:
+				    <h1>*384*5555111#</h1>
+				    <small>(number will change)</small><br><br>
+				    
+				    Demo 2: <a href="opc" target="_blank">Admin Site + Dashboard</a>
+				</section>
+				
+				
+				<!--<section data-background-image="img/slide-backgrounds/rhinos1.jpg", data-background-opacity="0.3">
+				    <h2>Pilot Timeline</h2>
+				    <ul class="dashed">
+				        <li><b>This week:</b> Building screens, Usability testing</li>
+				        <li><b>Oct&ndash;Dec:</b> Testing USSD for CDP workflows</li>
+				        <li><b>Jan&mdash;</b>: Building for other projects, advertising</li>
+				    </ul>
+				</section>-->
+				
+				<section data-background-image="img/slide-backgrounds/rhinos1.jpg", data-background-opacity="0.3">
+				    <h3>USSD Pilot Timeline</h3>
+				    <table style="font-size:85%">
+				        <tr>
+			                <td style="vertical-align:middle"><b>This week</b></td>
+			                <td tyle="border-bottom: solid 1px">
+			                    <ul class="dashed">
+			                        <li>Iterate on screens with CDP feedback</li>
+			                        <li>Test: is the system easy to use?</li>
+			                    </ul>
+			                </td>
+				        </tr>
+				        <tr class="fragment">
+				            <td style="vertical-align:middle"><b>Oct&ndash;Dec</b></td>
+			                <td>
+			                    <ul class="dashed">
+			                        <li>Test: is USSD useful in pilot projects?</li>
+			                        <li>(Matt's in Seattle, but available)</li>
+			                    </ul>
+			                </td>
+				        </tr>
+				        <tr class="fragment">
+				            <td style="vertical-align:middle">
+				                <b>Jan&mdash;</b><br>
+				                <small><b>Contingent on findings</b></small>
+			                </td>
+			                <td>
+			                    <ul class="dashed">
+			                        <li>Build out service</li>
+			                        <li>Advertise</li>
+			                        <li>Test: does USSD improve community relations, and help serve communities better?</li>
+			                    </ul>
+			                </td>
+				        </tr>
+
+				    </table>
+				</section>
+				
+				
+				<section>
+				    <h2 style="margin-bottom:0">SMS + USSD</h2>
+				    together
+				</section>
+				
+				
+				<section>
+				    <section>
+                        <table id="comparison-table">
+                            <tr>
+                                <td><h3>SMS</h3></td>
+                                <td><h3>USSD</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Unstructured</td>
+                                <td>Structured</td>
+                            </tr>
+                            <tr>
+                                <td>Push + Pull</td>
+                                <td>Pull only</td>
+                            </tr>
+                            <tr>
+                                <td>Message stays on phone</td>
+                                <td>Leaves no trace</td>
+                            </tr>
+                            <tr>
+                                <td>User waits for reply</td>
+                                <td>Instant response</td>
+                            </tr>
+                            <tr>
+                                <td>&mdash;</td>
+                                <td>Limited input length</td>
+                            </tr>
+                            <tr>
+                                <td>Affordances: prompting</td>
+                                <td>Affordances: menu options</td>
+                            </tr>
+                        </table>
+                    </section>
+                   
+				</section>
+				
+				
+				<section>
+				    <h3>SMS + USSD Integration</h3>
+				    <table style="font-size:70%">
+				        <tr>
+				            <td style="vertical-align:middle"><b>For staff</b></td>
+				            <td>
+				                <ul class="dashed">
+				                    <li>Automatically open 2waySMS cases from USSD?</li>
+				                    <li>View a user's USSD and SMS history together?</li>
+				                </ul>
+				            </td>
+				        </tr>
+				        <tr>
+				            <td style="vertical-align:middle"><b>For communities</b></td>
+				            <td>
+				                <ul class="dashed">
+				                    <li>Send USSD shortcuts: *384*5511*20#</li>
+				                    <li>Trigger SMS messages from USSD</li>
+				                    <li>Registration flows</li>
+				                    <li>USSD refers questions to SMS</li>
+				                    <li>Problem: publicizing both numbers?</li>
+				                </ul>
+				            </td>
+				        </tr>
+				        
+				    </table>
+				</section>
+				
+				<section>
+				    <h3>Alternative SMS Approaches</h3>
+				    <div style="width:20%; display:inline-block">
+				        <img src="img/msurvey-logo.webp" style="width:90%; height: auto;">
+				        <img src="img/rapidpro-logo.png" style="width:90%; height: auto">
+				    </div>
+				    <img src="img/rapidpro-flow.png" style="width:40%; height: auto">
+				    <img src="img/rapidpro-inbox.png">
+
+				</section>
+				
+				
+				<section>
+				    <h2>Engagement</h2>
+				</section>
+				
+				<section>
+
+				        <h4 style="margin-bottom:0">2waySMS number</h4>
+				        0725555111<br><br>
+				        <h4 style="margin-bottom:0">Possible USSD numbers</h4>
+				        *384*5555111#<br>
+				        *384*555111#<br>
+				        *384*5511#<br>
+				        
+				        <small>(other ideas?)</small>
+				</section>
+				
+				
+				
+			    <section>
+			    
+			        <section><h3>Extra Slides</h3></section>
+			        
+			        <section data-background-color="white">
+                        <h3>Affordances</h3>
+                        <img src="img/teacup.jpg" style="width:45%;">
+                        <img src="img/scoop.jpg" style="width:45%">
+                    </section>
+                        
+                    <section>
+				        -msurvey
+				        -rapidpro
+				    </section>
+				    
+				    
+				    <section>
+				    - cost
+				    - is it possible to have authentic communication over partially-automated SMS and USSD?
+				    </section>
+			    
+			    </section>
+				
+				
+
 			</div>
 		</div>
 
@@ -42,7 +448,9 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+				],
+				progress: false,
+				hash: true,
 			});
 		</script>
 	</body>
