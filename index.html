@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/serif.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,7 +21,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-		
+
 		<style type="text/css">
 		    ul {
               margin: 0;
@@ -36,12 +36,12 @@
               content: "\2014\a0";
               text-indent: -5px;
             }
-            
+
             img {
                 border: 0 !important;
                 box-shadow: none !important;
             }
-            
+
             #comparison-table {
                 font-size: 70%;
                 text-align: center;
@@ -56,13 +56,13 @@
             #comparison-table tr.fragment.visible td  {
                 border-bottom: 1px solid !important;
             }
-            
-            
+
+
             .sms-convo {
                 font-size: 50%;
                 border-radius: 10px;
             }
-            
+
             .sms-convo.sms-convo-nurse {
 	            position: relative;
 	            background: #fafafa;
@@ -91,7 +91,7 @@
 	            border-width: 23px;
 	            margin-top: -23px;
             }
-            
+
             .sms-convo.sms-convo-patient {
 	            position: relative;
 	            background: #DCF8C6;
@@ -125,524 +125,354 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-			    
-		        <section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.9" 
-			            data-background-color="black" style="color:white">
-			        <section>
-			            <div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
-			            <h2 style="color:white">SMS + USSD</h2><br>
-			            <ul class="dashed">
-			                <li>Community USSD service</li>
-			                <li>Pilot structure</li>
-			                <li>Integration with 2waySMS</li>
-			                <li>Engagement strategies</li>
-			            </ul>
-			            </div>
-			        </section>
-			        
-			        <section>
-		                <small>
-		                Tabs to open before presentation:
-		                <ul class="dashed">
-		                    <li>Admin site</li>
-		                    <li>USSD usage viz</li>
-		                    <li>Crossfilter</li>
-		                    <li>Africastalking USSD number availability</li>
-		                    <li>Jupyter lab SMS stuff</li>
-		                </ul>
-		                </small>
-		            </section>
-	            </section>
-				
-				<section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.1" 
-			            data-background-color="black" style="color:white">
-				    <ul>
-				         <table><tr>
-				            <td style="vertical-align:middle"><img src="img/ussd-bsnl.png" style="height:100%; width: auto; background:none;"></td>
-				            <td style="vertical-align:top; padding-top:2em">
-				                <h3 style="color:white">USSD</h3>
-				                <ul class="dashed">
-				                    <li>Works on every phone</li>
-				                    <li>Familiar: *100# and mPesa</li>
-				                </ul>
-				            </td>
-				         </tr></table>
-				    </ul>
-				</section>
-				
-				<section>
-				    <section data-background-image="img/slide-backgrounds/icow-screen.jpg" data-background-size="cover" style="color:white">
-				        <div class="stretch"></div>
-				        <div style="background:rgba(0,0,0,0.85);padding:20px 100px; display:inline-block; border-radius:20px;">
-            				Example:<br>
-            				iCow &mdash; *285#
-        				</div>
-    				</section>
-    				<section data-background-color="#222">
-    				    <h3 style="color:white">iCow &mdash; *285#</h3>
-    				    <div>
-    				        <img src="img/icow-1.jpg" style="width:23%">
-                            <img src="img/icow-2.jpg" style="width:23%">
-                            <img src="img/icow-3.jpg" style="width:23%">
-                            <img src="img/icow-4.jpg" style="width:23%">
-    				    </div>
-    				</section>
-				</section>
-				
-				<section data-background-color="#fff">
-			        <section>
-				        <h3>Concept: Community USSD Line</h3>
-				        <img class="stretch" style="box-shadow:none" src="img/concept.jpg">
-				    </section>
-				</section>
-				
-				<section>
-				    <section data-background-color="black" data-background-image="img/slide-backgrounds/river.jpg" data-background-opacity="0.4">
-				        <div style="padding:20px; background:rgba(240, 241, 235,0.8); border-radius:10px; display:inline-block;">
-                        <table id="comparison-table">
-                            <tr>
-                                <td><h3>SMS</h3></td>
-                                <td><h3>USSD</h3></td>
-                            </tr>
-                            <tr>
-                                <td>Unstructured</td>
-                                <td>Structured</td>
-                            </tr>
-                            <tr>
-                                <td>Push + Pull</td>
-                                <td>Pull only</td>
-                            </tr>
-                            <tr>
-                                <td>Message stays on phone</td>
-                                <td>Leaves no trace</td>
-                            </tr>
-                            <tr>
-                                <td>User waits for reply</td>
-                                <td>Instant response</td>
-                            </tr>
-                            <tr>
-                                <td>&mdash;</td>
-                                <td>Limited input length</td>
-                            </tr>
-                            <tr>
-                                <td>Affordances: prompting</td>
-                                <td>Affordances: menu options</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </section>
-                   
-				</section>
-				
-				<section data-background-color="black" data-background-image="img/slide-backgrounds/river.jpg" data-background-opacity="0.1" style="color:white">
-			         <h3 style="color:white">USSD is good for:</h3>
-			         <ul class="dashed">
-			            <li class="fragment">Browsing information:
-			                <blockquote class="fragment" style="width:90%;background-color:rgba(255,255,255,0.15);border-radius:5px;">
-			                    <ul class="dashed" style="font-size:75%; font-style:italic;">
-			                        <li>What are Ol Pejeta's offerings?</li>
-			                        <li>How can I benefit?</li>
-			                        <li>How do I access the programs?</li>
-			                    </ul>
-			                </blockquote>
 
-			            </li>
-		                <li class="fragment">Instructions, ag extension</li>
-			            <li class="fragment"><div style="display:inline-block; vertical-align:top">
-			                Structured user input<br>
-			                <small>Surveys, booking services</small>
-			            </div></li>
+					<section data-background-image="img/ussd-jiko-wide-toppadded-extendedsky.jpg" style="color:black" data-transition="fade">
+						<h3 style="color:black">Mobile Phones and <br>Conservancy Communities</h3>
+						<div class="authors" style="font-size:65%">
+							<span>Matt Ziegler,</span>
+							<span>Morgan Wack,</span>
+							<span>Nancy Ingutia,</span>
+							<span>Ian Muiruri,</span>
+							<span>Nicholas Njogu,</span>
+							<span>Kennedy Muriithi,</span>
+							<span>William Njoroge,</span>
+							<span>James Long,</span>
+							<span>Kurtis Heimerl</span>
+						</div>
+						<div id="institutions">
+							<img src="img/ol-pejeta-logo.png" style="background:none; width: 20%; height: auto; vertical-align: middle;"> 
+							<img src="img/uw-logo.png" style="background:none; background:none; width: 35%; height: auto; vertical-align:-45%; margin-left:1em">
+						</div>
+						<div class="stretch"></div>
+						
+					</section>
 
-			         </ul>
-				</section>
-				
-				<section>
-				    <section data-background-image="img/slide-backgrounds/jiko.jpg", data-background-opacity="1" 
-				        data-background-color="black" style="color:white">
-				        <div style="background-color:rgba(0,0,0,0.7); padding: 30px">
-				        <h3 style="color:white">Pilot 1: Jiko Program</h3>
-				        <ul class="dashed">
-				            <li>Information
-				                <ul class="dashed">
-				                    <li>How to get one</li>
-				                    <li>How to use</li>
-				                    <li>How to maintain</li>
-				                </ul>
-				            </li>
-				            <li>Request service</li>
-				            <li>Accountability?</li>
-				            <li>Manage supply chain?</li>
-				        </ul>
-				        </div>
-				    </section>
-				    
-				    <section data-background-image="img/slide-backgrounds/bus.jpg", data-background-opacity="1" 
-				        data-background-color="black" style="color:white">
-				        <div style="background-color:rgba(0,0,0,0.7); padding: 30px">
-				        <h3 style="color:white">Pilot 2: Request Bus Trips</h3>
-				        <ul class="dashed">
-				            <li>On USSD, tell us:
-				                <ul class="dashed">
-				                    <li>Which community / school</li>
-				                    <li>How many people</li>
-				                    <li>Requested date</li>
-				                </ul>
-				            </li>
-				            <li>Steven calls you back to confirm</li>
-				        </ul>
-				        </div>
-				    </section>
-				    
-	                <section data-background-image="img/slide-backgrounds/school.jpg", data-background-opacity="1" 
-				        data-background-color="black" style="color:white">
-				        <div style="background-color:rgba(0,0,0,0.5); padding: 30px">
-				        <h3 style="color:white">Pilot 3: Bursaries</h3>
-				        <ul class="dashed">
-				            <li>How to apply</li>
-				            <li>Who is community rep</li>
-				            <li>Important dates</li>
-				            <li>Get more information</li>
-				            <li>Combine with SMS</li>
-				        </ul>
-				        </div>
-				    </section>	
-				    
-				    <section data-background-image="img/slide-backgrounds/cows.jpg", data-background-opacity="1" 
-				        data-background-color="black" style="color:white">
-				        <div style="background-color:rgba(0,0,0,0.5); padding: 30px">
-				        <h3 style="color:white">Pilot 4: Cattle Extension</h3>
-				        <ul class="dashed">
-				            <li>Order supplies from Ol Pejeta</li>
-				            <li>Directory of external suppliers</li>
-				            <li>Nutrition information</li>
-				            <li>Restricted to Mutara, Tangi-Nyeusi, Ex-Rock</li>
-				        </ul>
-				        </div>
-				    </section>			    
-				</section>
-				
-				
-				<section data-background-image="img/slide-backgrounds/sunset.jpg", data-background-opacity="0.5">
-				    Demo 1:
-				    <h1 style="color:black; margin-bottom:-8px;">*384*5555111#</h1>
-				    <small>(number will change)</small><br><br>
-				    
-				    Demo 2: <a href="opc" target="_blank" style="color:#45072f">Admin Site + Dashboard</a>
-				</section>
-				
-				
-				<!--<section data-background-image="img/slide-backgrounds/rhinos1.jpg", data-background-opacity="0.3">
-				    <h2>Pilot Timeline</h2>
-				    <ul class="dashed">
-				        <li><b>This week:</b> Building screens, Usability testing</li>
-				        <li><b>Oct&ndash;Dec:</b> Testing USSD for CDP workflows</li>
-				        <li><b>Jan&mdash;</b>: Building for other projects, advertising</li>
-				    </ul>
-				</section>-->
-				
-				<section data-background-image="img/slide-backgrounds/sunset.jpg", data-background-opacity="0.5">
-				    <h3>USSD Pilot Timeline</h3>
-				    <div style="padding:20px; background:rgba(240, 241, 235,0.7); border-radius:10px; display:inline-block;">
-				    <table style="font-size:85%">
-				        <tr>
-			                <td style="vertical-align:middle"><b>This week</b></td>
-			                <td tyle="border-bottom: solid 1px">
-			                    <ul class="dashed">
-			                        <li>Iterate on screens with CDP feedback</li>
-			                        <li>Test: is the system easy to use?</li>
-			                    </ul>
-			                </td>
-				        </tr>
-				        <tr class="fragment">
-				            <td style="vertical-align:middle"><b>Oct&ndash;Dec</b></td>
-			                <td>
-			                    <ul class="dashed">
-			                        <li>Test: is USSD useful in pilot projects?</li>
-			                        <li>(Matt's in Seattle, but available)</li>
-			                    </ul>
-			                </td>
-				        </tr>
-				        <tr class="fragment">
-				            <td style="vertical-align:middle">
-				                <b>Jan&mdash;</b><br>
-				                <small><b>Contingent on findings</b></small>
-			                </td>
-			                <td>
-			                    <ul class="dashed">
-			                        <li>Build out service</li>
-			                        <li>Advertise</li>
-			                        <li>Test: does USSD help serve communities better, and improve relations?</li>
-			                    </ul>
-			                </td>
-				        </tr>
+					<section data-background-image="img/slide-backgrounds/baboons.jpg" style="color:black">
+						<section>
+							
+						</section>
 
-				    </table>
-				    </div>
-				</section>
-				
-				
-				<section data-background-image="img/slide-backgrounds/road1.jpg", data-background-opacity="0.3">
-				    <h2 style="margin-bottom:0">SMS + USSD</h2>
-				    together
-				</section>
-				
-				
-				<section data-background-image="img/slide-backgrounds/road1.jpg", data-background-opacity="0.3">
-				    <section>
-    				    <div style="padding:20px; background:rgba(240, 241, 235,0.6); border-radius:10px; display:inline-block;">
-                        <table id="comparison-table">
-                            <tr>
-                                <td><h3>SMS</h3></td>
-                                <td><h3>USSD</h3></td>
-                            </tr>
-                            <tr>
-                                <td>Unstructured</td>
-                                <td>Structured</td>
-                            </tr>
-                            <tr>
-                                <td>Push + Pull</td>
-                                <td>Pull only</td>
-                            </tr>
-                            <tr>
-                                <td>Message stays on phone</td>
-                                <td>Leaves no trace</td>
-                            </tr>
-                            <tr>
-                                <td>User waits for reply</td>
-                                <td>Instant response</td>
-                            </tr>
-                            <tr>
-                                <td>&mdash;</td>
-                                <td>Limited input length</td>
-                            </tr>
-                            <tr>
-                                <td>Affordances: prompting</td>
-                                <td>Affordances: menu options</td>
-                            </tr>
-                        </table>
-                        </div>
-                    </section>
-                   
-				</section>
-				
-				
-				<section data-background-image="img/slide-backgrounds/road1.jpg", data-background-opacity="0.3">
-				    <h3>SMS + USSD Integration</h3>
-				    <div style="padding:20px; background:rgba(240, 241, 235,0.6); border-radius:10px; display:inline-block;">
-				    <table style="font-size:70%">
-				        <tr>
-				            <td style="vertical-align:middle"><b>For staff</b></td>
-				            <td style="padding:30px 0;">
-				                <ul class="dashed">
-				                    <li>USSD triggers 2waySMS cases?</li>
-				                    <li>Show user's USSD and SMS history together?</li>
-				                </ul>
-				            </td>
-				        </tr>
-				        <tr>
-				            <td style="vertical-align:middle"><b>For communities</b></td>
-				            <td style="padding:30px 0;">
-				                <ul class="dashed">
-				                    <li>Send USSD shortcuts: *384*5511*20#</li>
-				                    <li>Registration flows</li>
-				                    <li>USSD refers questions to SMS</li>
-			                        <li>USSD triggers SMS messages</li>
-				                    <li>Problem: publicizing both numbers?</li>
-				                </ul>
-				            </td>
-				        </tr>
-				        
-				    </table>
-				    </div>
-				</section>
-				
-				<section data-background-color="white">
-				    <h3>Alternative SMS Approaches</h3>
-				    <div style="width:20%; display:inline-block">
-				        <img src="img/msurvey-logo.webp" style="width:90%; height: auto;">
-				        <img src="img/rapidpro-logo.png" style="width:90%; height: auto">
-				    </div>
-				    <img src="img/rapidpro-flow.png" style="width:40%; height: auto; margin-left:10%">
-				    <img src="img/rapidpro-inbox.png">
+						<section style="color:black" data-background-image="img/slide-backgrounds/baboons.jpg" data-background-color="#000" data-background-opacity="0.3">							
+							<img class="stretch" src="img/yosemite.jpg">
+						</section>
 
-				</section>
-				
-				
-				<section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.3">
-				    <h2>Engagement</h2>
-				    <h5 class="fragment">Experimental setup</h5>
-				</section>
-				
-				
-				<section>
-				    <section data-background-image="img/slide-backgrounds/icow-sticker.jpg"  data-background-opacity="0.05">
-				        <h3>Publicity</h3>
-				        <ul class="dashed">
-				            <li>SMS broadcasts</li>
-				            <li>Community meetings</li>
-				            <li>Saving numbers into phones</li>
-				            <li>Local radio ads?</li>
-				            <li>Referral program?</li>
-				            <li>Posters?</li>
-				            <li>Stickers?</li>
-				        </ul>
-				    </section>
-				    
-			       <section data-background-image="img/slide-backgrounds/icow-sticker.jpg"  data-background-opacity="1"></section>
-				
-				</section>
-				
-				
-				
-				<section>
-				    <h3>SMS Cost Sentitivity</h3>
-				    <div style="margin-top:-0.6em">No credit on your phone?</div>
-				    <img src="img/sangeet-swara-cost.png" class="stretch">
-				    <div style="font-size:40%; opacity:0.8"><span style="opacity:0.6">
-				    Vashistha, A., Cutrell, E., Borriello, G., & Thies, W. (2015).</span> Sangeet Swara: A Community-Moderated Voice Forum in Rural India. <span style="opacity:0.6">Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI ’15, 417–426. https://doi.org/10.1145/2702123.2702191</span></div>
-				</section>
-				
-				<section>
-				    <h4>Personal Engagement: WelTel Trial</h4>
-				    <!--<img src="img/weltel-phone-responses.png" style="height: auto; vertical-align: middle; width: 40%">-->
-				    <img src="img/weltel-clinical-outcomes.png" style="height: auto; width: 80%; vertical-align: middle">
-				    <div style="font-size:40%; opacity:0.8"><br><span style="opacity:0.6">Lester, R. T., Ritvo, P., Mills, E. J., Kariri, A., Karanja, S., Chung, M. H., … Plummer, F. A. (2010).</span> Effects of a mobile phone short message service on antiretroviral treatment adherence in Kenya (WelTel Kenya1): a randomised trial. <span style="opacity:0.6">The Lancet, 376(9755), 1838–1845. https://doi.org/10.1016/S0140-6736(10)61997-6</span></div>
-				</section>
-				
-				
-				<section data-background-image="img/slide-backgrounds/chat-bg.jpeg" data-background-repeat="repeat" data-background-size="contain">				    
-				    <section>
-				    <h4>Personal Engagement</h4>
-				    <blockquote class="sms-convo sms-convo-nurse">
-				    <span style="font-family:sans;font-style:normal;"><b>Automated message:</b></span><br>
-				    <span style="color:#128C7E">[Name]</span> this is <span style="color:#128C7E">[Nurse]</span> from Mathare clinic.  Regular, strong  stomach  pains  are  a  sign  of  labor.   If  you  feel strong tightening of your belly,  leaking of fluid or any bleeding go to the clinic. Have you had any labor pains? How often do you feel them? Are you worried?”
-				    </blockquote>
-				    
-				    <blockquote class="sms-convo sms-convo-patient">
-				    <span style="font-family:sans;font-style:normal;"><b>40 minutes later:</b></span><br>
-				    “Hi,am not as such worried,but i have a little fear.i havenever had any labor pains.”
-				    </blockquote>
-				    
-				    <blockquote class="sms-convo sms-convo-patient">
-				    <span style="font-family:sans;font-style:normal;"><b>10 minutes later:</b></span><br>
-                    “Hi.madam [nurse],kindly will u state for me items thatare needed when i will attend clinic during labor painse.g clothing for the baby,basin,.and what els.......”
-				    </blockquote>
-				    
-				    <blockquote class="sms-convo sms-convo-nurse">
-				    <span style="font-family:sans;font-style:normal;"><b>Nurse reply:</b></span><br>
-				    “Hi <span style="color:#128C7E">[name]</span>, you need baby clothes, shawl, leso, basin,spirit, cotton wool.  that is mainly it.  the rest you caninquire from the nurses when you reach the hospital.”
-				    </blockquote>
-				    
-				    <div style="font-size:40%; opacity:0.8"><span style="opacity:0.6">
-				    Perrier, T., Dell, N., DeRenzi, B., Anderson, R., Kinuthia, J., Unger, J., & John-Stewart, G. (2015). </span>Engaging Pregnant Women in Kenya with a Hybrid Computer-Human SMS Communication System.<span style="opacity:0.6"> Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI ’15, 1429–1438. https://doi.org/10.1145/2702123.2702124
-				    </span></div>
+						<section style="color:black" data-background-image="img/slide-backgrounds/baboons.jpg" data-background-color="#000" data-background-opacity="0.3">
+							<img src="img/conflict-headline-big-1.png">
+							<img src="img/conflict-headline-big-2.png">
+							<img src="img/conflict-headline-big-3.png">
+						</section>	
+					</section>
 
-				    
-				    </section>
-				    
-				    
-				     <section>
-				        <div style="background-color:white; border-radius: 20px; display:inline-block; padding-top:50px;">
-				        <img src="img/momconnect-logo.jpg"><br>
-				        <img src="img/momconnect-stats.png">
-				        </div>
-				    </section>
-				    
-</section>
-				
-				<section>
-				    <h5>2waySMS Incoming Messages</h5>
 
-			        <img src="img/charts/sms6.1.png" style="width:50%; height: auto;">
-				    <img src="img/charts/sms4.1.png" style="width:40%; height: auto">
-				    <img src="img/charts/sms2.1.png" style="width:50%; height: auto">
-			        <img src="img/charts/sms1.1.png" style="width:40%; height: auto; vertical-align:top">
-				</section>
-				   
-				<section data-background-image="img/slide-backgrounds/plant.jpg" data-background-color="black" data-background-opacity="0.7" style="color:white">
-		            <div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
-				    <h3 style="color:white">Questions</h3>
-				    <ul class="dashed">
-				        <li>How to we make the most of this pilot?</li>
-				        <li>What should the USSD number be?</li>
-				        <li>How to publicize?</li>
-				        <li>Which interactions need case management?</li>
-				        <li>How to evaluate?</li>
-				    </ul>
-				    </div>
-				</section>
-				
-				<section>
+					<section data-background-color="#888" data-background-image="img/community-mosaic.png" data-backgroun-size="cover">
+						
+					</section>
 
-				        <h4 style="margin-bottom:0">2waySMS number</h4>
-				        0725555111<br><br>
-				        <h4 style="margin-bottom:0">Possible USSD numbers</h4>
-				        *384*5555111#<br>
-				        *384*555111#<br>
-				        *384*5511#<br>
-				        
-				        <small>(other ideas?)</small>
-				</section>
-				
-				
-				
-			    <section>
-			    
-			        <section><h3>Extra Slides</h3></section>
-			        
-			        <section data-background-color="white">
-                        <h3>Affordances</h3>
-                        <img src="img/teacup.jpg" style="width:45%;">
-                        <img src="img/scoop.jpg" style="width:45%">
-                    </section>
-                    
-                    <section data-background-color="white">
-                        <img class="stretch" src="img/africastalking-cost-email.png">
-                    </section>
-                        
-				    <section data-background-image="img/slide-backgrounds/chat-bg.jpeg" data-background-repeat="repeat" data-background-size="contain">				    
-				        <h4>AI with SMS is hard</h4>
-				        
-				        <blockquote class="sms-convo sms-convo-patient" style="padding:15px 0">
-				        my headache is ve ly pain and kizuguzugu
-				        </blockquote>
-				        
-				        <blockquote class="sms-convo sms-convo-patient">
-				        My nxt visit will be on 29th may.na nina sweat sana
-siku hizi xana xana usiku.can u elaborate on this pliz
-				        </blockquote>
-				        
-				        <blockquote class="sms-convo sms-convo-patient">
-				        the 1st thing iwould like 2say hi 2u hpng dat ur fine.my
-qstn is dat when ivisted clnc last mnth itryd 2expose
-my complication 2the dctr dat the lab told 2hav some
-medicine coz of infctn bt they gav out 2 me some amoxil
-capsols 4me 2use 2x3 pa day bt whn iused them 4the 1st
-4day iwas flng stomach strng pain den ijust chsn my self
-2surender tkng thm did iwrng or icld cntnu usng them
-bcz its how they use 2cure
-				        </blockquote>
-				        
-				        <blockquote class="sms-convo sms-convo-patient" style="padding:15px 0">
-				        yesiamhavingheartburninaweekitocurstwice
-				        </blockquote>				        
-				        
-				        
-				        
-				        <div style="font-size:40%; opacity:0.8"><span style="opacity:0.6">
-				        Perrier, T., Dell, N., DeRenzi, B., Anderson, R., Kinuthia, J., Unger, J., & John-Stewart, G. (2015). </span>Engaging Pregnant Women in Kenya with a Hybrid Computer-Human SMS Communication System.<span style="opacity:0.6"> Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI ’15, 1429–1438. https://doi.org/10.1145/2702123.2702124
-				        </span></div>
 
-				    
-				    </section>
-				
-				    
-				    <section>
-				    - is it possible to have authentic communication over partially-automated SMS and USSD?
-				    </section>
-			    
-			    </section>
-				
+					<section data-background-color="white" data-background-transition="slide" style="color:black">
+						<h3 style="color:black">Communication</h3>
+						<img class="stretch" style="border:0" src="img/community-map.png">
+						<ul class="dashed" style="margin-top:50px;">
+							<li>35,000 people within 5km</li>
+							<li>Travel is difficult</li>
+							<li>Communication is hard</li>
+						</ul>
+					</section>
+
+					<section data-background-color="#888" data-background-image="img/workshop.jpeg">
+						<section>
+							
+						</section>
+
+						<section>
+							<div style="background:rgba(0,0,0,0.7);padding:20px 100px; display:inline-block; border-radius:10px;">
+								<h4>Can basic phone services...</h4>
+								<ul style="list-style-type: none !important;">
+									<li>...improve service delivery?</li>
+
+									<li>...build relationships?</li>
+
+								</ul>
+
+								<br>
+								<div class="fragment">
+									<hr color="white">
+									<ul class="dashed">
+										<li>Feedback</li>
+										<li>Credible information</li>
+										<li>Improving reach</li>
+										<li>Accountability</li>
+									</ul>
+								</div>
+								
+
+								<!--<small class="fragment">Collect&nbsp;feedback &bull;&nbsp;Authoritative&nbsp;information&nbsp;source &bull;&nbsp;Improve&nbsp;reach &bull;&nbsp;Accountability</small>-->
+							</div>
+						</section>
+
+						<section>
+							<div style="background:rgba(0,0,0,0.7);padding:20px 100px; display:inline-block; border-radius:10px;">
+								<h3>Methods</h3>
+								<ul class="dashed">
+									<li>Community focus groups</li>
+									<li>Staff interviews</li>
+									<li>Technology pilots</li>
+								</ul>
+							</div>
+						</section>
+
+					</section>
+
+					<section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.6"
+								data-background-color="#DDD" style="color:black">
+						<section>
+							<h3 style="color:black">Communication is hard</h3>
+							<!--I get calls from communities every day, every night, even on weekends-->
+							Extremely resource intensive<br><br>
+
+							<blockquote class="fragment" style="background:rgba(250, 250, 250, 0.6); font-size:80%">
+								&ldquo;People call us asking the same questions over and over again. We answer a thousand calls about the simplest thing.&ldquo;
+								<div style="text-align: right;">&mdash; Staff</div>
+							</blockquote>
+
+							<blockquote class="fragment" style="background:rgba(250, 250, 250, 0.6); font-size:80%">
+								&ldquo;We call the veterinarian who does artificial insemination, and he gives us the updates.&rdquo;
+								<div style="text-align: right;">&mdash; Community member</div>
+							</blockquote>
+						</section>
+						<!--If people don’t see us regularly, they will think we have abandoned them. People needto see that we are concerned with their welfare, not that we justcome when we want something.
+
+						after the meetings, peoplewere more likely to call us to report problems and violations. . .We found that it’s been important to bring all stakeholderstogether, like every 3 months. It’s been very effective.”
+
+						youths were too busy working during the days, and thatthey felt that the meetings were more for elders:“if you wantyouths to come, you should tailor the meetings for youths.” -->
+						<section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.3"
+						data-background-color="#DDD"">
+						<ul class="dashed">
+							<li class="fragment">
+								Relationship building
+								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
+									&ldquo;If people don’t see us regularly, they'll think we have abandoned them. People need to see that we're concerned with their welfare, not that we just come when we want something.&rdquo;
+									<div style="text-align: right;">&mdash; Staff</div>
+								</blockquote>
+							</li>
+
+
+							<li class="fragment">
+								Expectation management
+								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
+									&ldquo;You have to be so so careful about managing expectations.
+									You say something, people understand the wrong thing, and expect something else. You can get really screwed up.
+									&rdquo;
+									<div style="text-align: right;">&mdash; Staff</div>
+								</blockquote>
+							</li>
+
+							<li class="fragment">Misinformation</li>
+
+							<li class="fragment">Young people are hard to reach</li>
+						</ul>
+						</section>
+					</section>
+
+					<section style="color:black" data-background-image="img/slide-backgrounds/mtkenya-pole.jpg" data-background-color="#DDD" data-background-opacity="0.5">
+						<h3 style="color:black">SMS Broadcast</h3>
+						<ul class="dashed">
+							<li>Announcements to 3,000 phone numbers<br>
+								<small>Job postings, community meeting dates, health outreach dates</small>
+							</li>
+
+							<li class="fragment">
+								Annecdotal evidence for success<br>
+								<small>More job applications, higher meeting and health outreach attendance</small>
+							</li>
+
+							<li class="fragment">
+								Mismatch: young people don't get SMS
+								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
+									&ldquo;I can see when I have an SMS from Ol Pejeta, so I give it to my son to tell me what it says.&rdquo;
+									<div style="text-align: right;">&mdash; Community elder</div>
+								</blockquote>
+							</li>
+						
+							<li class="fragment">
+								Occasional misunderstandings
+							</li>
+							<!--A lot of people don’t have anyone to readmessages for them.  Sometimes an old person comes to mebecause their phone’s memory is full of messages and theydon’t know what to do. I help them delete the messages, andthey haven’t opened any of them.
+						
+
+							we don’t knowhow our text messages are perceived by our communities.-->
+						</ul>
+					</section>
+
+					<section data-background-color="white">
+						<section data-background-color="#ECE5DD" style="color:black">
+							<h5 style="color:black; margin-bottom:10px">Two-way SMS hotline</h5>
+	
+							<small >Example messages</small>
+	
+							<blockquote class="sms-convo sms-convo-patient" style="margin-top:0px">
+								Dear ol pejeta consaverncy am a community member but ai whant inform you if it is an any varncy just inform ifen a fance ripear and security patrol thanks
+							</blockquote>
+							<blockquote class="sms-convo sms-convo-patient" style="border-top-right-radius:0; border-bottom-right-radius:0">
+								10 Erephants ware patroling kijabe thd whole night pls.
+							</blockquote>
+							<blockquote class="sms-convo sms-convo-patient">
+								Goodafternoon am a resindent of [redacted] and am borthed by a sheep diseases that afect lamps coursing small woulds aroud  mouth.
+							</blockquote>
+							<blockquote class="sms-convo sms-convo-patient">
+								My Name is [redacted] am farming nearest to u here on the river whow can u helpers from these monkey theru inaharimbu everything in the shamba
+							</blockquote>
+							<blockquote class="sms-convo sms-convo-patient">
+								Am a guardian from [redacted] and my sister achieved 332 marks how can I get a scholarship form?
+							</blockquote>
+	
+						</section>
+
+						<section data-background-color="white">
+							<h5 style="color:black">1 year: 344 messages from 170 users</h5>
+							<img style="box-shadow:none" class="stretch" src="img/paper-figures/sms-usage-singlecol-presentation.png">
+	
+							<!--<blockquote class="fragment" style="color:black;background:#EEE; font-size:70%;">
+								&ldquo;I didn't have anything funny to say&rdquo;
+								<div style="text-align: right;">&mdash; Community member</div>
+							</blockquote>-->
+
+						</section>
+						
+
+						
+					</section>
+
+					
+					<section data-background-color="#fff" data-background-transition="slide">
+						<section data-background-video="img/ussd-2.m4v" data-background-size="contain" data-background-video-muted="true" data-background-color="black">
+						</section>
+
+						<section>
+							<h3 style="color:black">Ol Pejeta Community USSD</h3>
+							<img class="stretch" style="box-shadow:none" src="img/concept.jpg">
+						</section>
+
+						<section data-background-image="img/slide-backgrounds/road1.jpg" data-background-opacity="0.5"
+						data-background-color="#DDD">
+							<img style="box-shadow:none" src="img/paper-figures/ussd-listprojects.png">
+							<img style="box-shadow:none" src="img/paper-figures/ussd-bursarymenu.png">
+							<img style="box-shadow:none" src="img/paper-figures/ussd-registerapplication.png">
+									<!--img style="box-shadow:none" src="img/paper-figures/ussd-jiko.png"-->
+
+						</section>
+
+						<section data-background-image="img/slide-backgrounds/road1.jpg" data-background-opacity="0.5"
+						data-background-color="#DDD">
+							<div style="background-color:#FFF; padding:50px; display:inline-block; border-radius:20px;">
+								<h5 style="color:black">1 month: 850 calls from 256 users</h5>
+								<img style="box-shadow:none" src="img/paper-figures/ussd-daily-usage-wider.png"><br>
+								<img style="box-shadow:none" src="img/paper-figures/ussd-screens-per-session-wider.png"><br>
+								<img style="box-shadow:none" src="img/paper-figures/ussd-sessions-per-user-wider.png"><br>
+							</div>
+						</section>
+
+						
+					</section>
+	
+					<section style="color:black" data-background-color="white" data-background-image="img/slide-backgrounds/river.jpg" data-background-opacity="0.3">
+						<ul class="dashed">
+							<li class="fragment">
+								Heterogeneous phone access and preferences
+								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%;">
+									&ldquo;I only text on a need basis&rdquo;
+									<div style="text-align: right;">&mdash; Community elder</div>
+								</blockquote>
+							</li>
+
+							<li class="fragment">Cost sensitivity</li>
+
+							<li class="fragment" style="margin-top:1em">
+								Security
+								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
+									&ldquo;	An informer should be treated with the most integrity and confidentiality... the two-way SMS system compromises the security of an informer.
+									&rdquo;
+									<div style="text-align: right;">&mdash; Staff</div>
+								</blockquote>
+							</li>
+							
+						</ul>
+					</section>
+
+
+					<section data-background-image="img/slide-backgrounds/plant.jpg" data-background-color="black" data-background-opacity="0.7" style="color:white">
+						<section>
+							<div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
+									<span style="vertical-align: baseline; font-size:145%;font-weight:bold">Takeaways</span>
+									<span style="vertical-align: 10%; font-size:70%; opacity:0.7">&rarr; Challenges</span> 
+									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;"> &rarr; Future work</span>
+								<br><br>
+								<ol>
+									<li class="fragment" style="margin-bottom:0.5em">Relationships and communication are critical for many modern conservancies</li>
+									<li class="fragment" style="margin-bottom:0.5em">Proof of concept: mobile phone services could help in some places </li>
+									<li class="fragment">Conservancy contexts have particular challenges for phone service deployments</li>
+								</ol>
+							</div>
+						</section>
+						<section>
+							<div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
+									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;">Takeaways &rarr;</span>
+									<span style="vertical-align: baseline; font-size:145%;font-weight:bold">Challenges</span> 
+									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;"> &rarr; Future work</span>
+								<br><br>
+								<ul class="dashed">
+									<li class="fragment">Relationships and diplomacy are crucial</li>
+									<li class="fragment">Potential for miscommunication</li>
+									<li class="fragment">Accessibility</li>
+									<li class="fragment">Security</li>
+									<li class="fragment">Institutional capacity</li>
+								</ul>
+							</div>
+						</section>
+						<section>
+							<div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
+									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;">Takeaways &rarr;</span>
+									<span style="vertical-align: 10%; font-size:70%; opacity:0.7">Challenges &rarr; </span> 
+									<span style="vertical-align: baseline; font-size:145%;font-weight:bold">Future work</span>
+								<br><br>
+								<ul class="dashed" style="margin-left:-20px">
+									<li class="fragment">
+										Design and system building<br>
+										<small style="margin-left:2.6em">Program design &bull; Recruitment &bull; Messaging strategy</small>
+									</li>
+									<li class="fragment" style="margin-top:0.7em">Engaging youth</li>
+
+									<li class="fragment" style="margin-top:0.7em">
+										Evaluate: 
+										<ul class="dashed" style="font-size:70%">
+											<li>Does it improve community relations?</li>
+											<li>Does it improve service provision?</li>
+											<li>Is it cost-effective?</li>
+										</ul>
+									</li>
+										
+									<li class="fragment" style="margin-top:0.7em">Generalize & scale</li>
+								</ul>
+							</div>
+						</section>
+					</section>
+
+					<section data-background-image="img/slide-backgrounds/rhinos.jpg" data-background-size="cover" data-background-color="black">
+						
+						<div style="background:rgba(255,255,255,0.7); padding: 10px; border-radius:5px; width:60%; margin-left: auto; margin-right: auto;">
+							<h2 style="color:black">Thanks!</h2>
+
+							<div style="vertical-align: middle; display:inline-block; margin-right:1em; width:40%">
+							<img src="img/ol-pejeta-logo.png" style="background:none; width: 100%; height: auto; margin:0">
+							<div style="display:block; text-align:left; font-size:40%; color:black; margin-top:-7px; padding-left:8px; opacity:0.9">Conservation Tech Lab</div>
+							</div>
+
+							<img src="img/uw-logo-stacked.png" style="background:none; background:none; width: 30%; height: auto; vertical-align:middle;">
+
+						</div>
+						<div class="stretch"></div>
+					</section>
+
 				
 
 			</div>
@@ -664,6 +494,9 @@ bcz its how they use 2cure
 				progress: false,
 				hash: true,
 				pdfSeparateFragments: false,
+				controls:false,
+				//showSlideNumber: 'all',
+				slideNumber: false,
 			});
 		</script>
 	</body>

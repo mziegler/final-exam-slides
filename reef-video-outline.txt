@@ -1,0 +1,407 @@
+I'm Matt Ziegler, at University of Washington, working with Ol Pejeta Conservancy in Laikipia Kenya.
+
+- Ol Pejeta is a wildlife conservancy
+best known as the refuge for the last two Northen White rhinos in the world.
+
+It protects critically endangered species like the Black Rhinoserous and Grevy's Zebra from acute poaching threats and continuous habitat loss.
+
+- It's surrounded by villages on all sides, many of which are pretty improverished,
+
+-  but still nearly everybody has a basic cell phone. 
+- So, in this work 
+- we're trying to use basic phone technologies like SMS and USSD menus 
+to open communication channels 
+and try to meaningfully engage with Ol Pejeta's surrounding communities.
+
+
+---(baboon picture?)---
+
+The motivation is that
+
+Conservancies everywhere are increasingly recognizing that their boundaries are porous, and that they need to work with locals to manage shared resources like water, soil, and pollinators. Human-wildlife conflict is a major problem
+pretty much everywhere 
+that threatens local people's crops and livestock, and
+
+community relations are especially important as more conservancies shift to models that support 
+wildlife populations outside their formal protected areas.
+
+
+- It's also really common for environmental institutions everywhere in the world to have tensions and conflict with local communities, 
+- sometimes because of brutal colonial histories and unfair treatment of locals.
+
+---------------------------- (Yosemite)
+
+
+
+- For example, a lot of the USA's national parks were created by 
+violent expulsion of Native people who had lived there. This is also true for Kenya, where most of the wildlife conservancies are located on former British colonial ranches.
+
+
+---------------------------- (conflict slide)
+
+
+This region of Kenya, has seen these tensions play out in particularly ugly ways, with some politicians campaigning against the conservancies, and armed raids by pastoralist groups during severe droughts.
+
+But international ethnography and social science research has shown that these kinds of problems are common for conservation institutions everywhere.
+Local people often have different goals than the conservancies,
+they lack decision-making power,
+and are often made promises of economic benefits 
+from conservation 
+that they never actually recieve.
+
+
+
+----------------------------- Community slide
+
+- So for their own survival, 
+- conservancies everywhere are recognizing that they need to work with local communities, 
+- to build good relationships
+- and strive to fairly share the costs and benefits of conservation.
+
+
+Ol Pejeta is a leader in community development work. They primarily hire local people, hold regular open community meetings, and communicate with local leaders daily.
+
+They invest tourism money in projects for education, health, agriculture, and resource management; last year more than $600,000
+
+
+---------------------------------- (map slide) 
+
+
+So, where do mobile phones come in?
+
+Decades of environmental governance research stress that it's really important to have open communication between all the different parties.
+
+And communication is a big challenge 
+- with all 35 thousand people who live on Ol Pejeta's borders.
+
+It's a huge area, with about 20 different villages, and travel between them is difficult.
+
+- Information reaches the communities through in fragments,
+- Some demographics, like young people, are really hard to reach, and
+- Rumors and misinformation are persistant.
+
+
+---------------------------------- (workshop slide)
+
+So, most community members have a basic mobile phone, and we wonder if we can leverage this
+to open communication channels with the conservancy. 
+
+(down)
+
+Can we use basic text-based mobile phone services
+to improve service delivery?
+Can can we help Ol Pejeta work better with the communities when issues arise?
+
+and get people to like the conservancy more?
+
+
+
+(down)
+
+We want to know if we can use phones to
+know quickly about issues in the communities; like animal breaches, poaching, or floods,
+provide a central authoratative information source about the conservancy
+reach new demographics
+and improve accountability.
+
+
+-------------------------------- (methods slide)
+
+So this paper presents some really preliminary, formative results.
+
+We did qualitative work with Ol Pejeta staff and community members, as well as early-stage pilots of SMS and USSD services.
+
+
+-------------------------------- (communication slide)
+
+So what did we learn?
+
+Ol Pejeta already puts a lot of work into communication with their communities.
+
+They have a lot of in-person interaction, through meetings and field visits,\
+but they spend a huge amount of time on the phone.
+
+(quote)
+
+Commonly, some community members get a staff member's phone number, and they kinda become their main contact for everything.
+
+(quote)
+
+In fact, most of our staff interviews for this paper were interrupted by phone calls, like an anxious parent asking about scholarships, a local leader worried about locusts, and teacher asking about computer upgrades, for example.
+
+-------------------------- 
+
+Some nuances of this
+
+They put a lot of work into building relationships.
+For example, 
+(quote)
+
+(next)
+
+Managing expectations is a huge challenge.
+
+Everybody kinda sees Ol Pejeta as a donor, people come asking for lots of different things because they see they can see that Ol Pejeta has a lot of resources, 
+and they have to be very careful what they say or else can end up in trouble.
+
+(next)
+
+Rumors and misinformaiton are a persistant problem,
+
+(next)
+
+And young people are really difficult to reach. There's a big generational divide. Elder people are more likely to own land and have a farm, so are a lot more interested in Ol Pejeta's environmental programming. They've struggled to engage with young people for a long time.
+
+---------------------- SMS broadcast slide
+
+So 
+
+Ol Pejeta has already deployed an SMS broadcast system that seems to be working pretty well.
+
+They've collected 3,000 phone numbers from community members who they're already engaged with, 
+people who already come to meetings and such.
+
+And they send regular messages with announcements like job postings, community meeting dates, and health clinics
+
+(next)
+
+We have a lot of anecdotal evidence that people are paying attention to the messages.
+
+Like, job applications have more than trippled, health clinic attendance has more than doubled
+
+(next)
+
+But
+
+we have a mismatch
+where most of the people recieving the messages are older, becaue we have phone numbers of people who are already involved with Ol Pejeta.
+But elder people in this area tend to use SMS a lot less, partially because of lower literacy.
+
+(quote)
+
+
+This kind of thing is really common.
+
+(next)
+
+We also saw that sometimes these short 160-character text messages can be misunderstood.
+
+
+
+
+------------------------------- (2way SMS messages)
+
+In another pilot, Ol Pejeta distributed a numeber for an SMS hotline
+where community members can 
+send messages to the conservancy,
+- hoping to get community input.
+- So far this approach has had mixed results - fewer people are sending messages than what we'd hoped for, largely because of these same usability challenges.
+- Some really important messages do come in, though. It generally seems that people will go through the trouble of sending SMS only when they have urgent, pressing issues like human-wildlife conflict or unemployment, 
+- and this filters the kinds of feedback we can get through SMS. 
+Mostly only about these urgent, pressing things.
+
+
+--------------------------- 2way SMS graph
+
+So here we see the number of incoming messages each week, over the year that it was deployed.
+
+It was fewer messages than we'd hoped for
+
+But interestingly, Ol Pejeta stopped promoting the hotline numbr in June of last year, but messages kept steadily coming in, 
+
+a lot of them from phone numbers we'd never seen before.
+
+So this shows that a lot of people have the number, even though they haven't been sending messages, 
+and that people are sharing the number with their friends.
+
+
+------------------- USSD slide
+
+So building from this,
+
+We've also built a USSD system. 
+
+This video clip just shows an example of how USSD looks on a phone for those of you who aren't familiar -
+
+USSD is a programmable text-based interface for simple, browsable menu apps 
+that work on every basic mobile phone; and 
+it's used heavily in Kenya already for things like mobile banking. 
+People are pretty familiar with it. You access it by dialing a phone number, and a little menu pops up on your phone.
+
+------------------- USSD Concept
+
+We wanted to provide some browsable information about Ol Pejeta and all of their programs, and try some more strucutred, directed kinds of user interactions.
+
+We want to use it for things like 
+- widely circulating program information, like sustainable agriculture tips, and
+- gathering feedback, like whether irrigation participants are getting enough water,
+
+--------------------- USSD Pilot
+
+In December, we ran our first pilot in conjunction with Ol Pejeta's scholarship application process,
+
+letting people browse some information about the scholarship program, like how to apply.
+
+We sent out one bulk SMS to those 3,000 phone numbers, telling people to dial the USSD code to browse scholarship information.
+
+--------------------- USSD graphs
+
+We actually got pretty good uptake for a first try, 850 calls from 256 users. 
+
+The scholarship program is pretty in-demand, and that helped.
+
+We can see from the lower two graphs that we had some attrition; a fair number of people only connected once and just made it through a couple screens before hanging up. But also, a fair number of people called repeatedly and browsed a lot of screens of information.
+
+
+
+--------------------- phone stuff
+
+So, for both the SMS and USSD pilots, we saw some differences in technology usage between different demographics. Young people used SMS and text a lot more. Some of the elders could do it, but just thought it was annoying. A lot of people couldn't do it because of literacy.
+
+For example, one guy told us "I only text on a need basis."
+
+
+We also saw lower uptake in the communities that were lowest-income.
+
+This kind of problem is pretty common for mobile phone projects in the developing world.
+
+
+(next)
+
+Cost sensitivity, the cost of sending an SMS message, is probably an issue, but we don't really know how much.
+
+(next)
+
+And another consideration is security. A lot of this communication is really sensitive. 
+
+Especially, 
+the conservancy tries to encourage community members to give tips on suspicious poaching activities. Mostly, people don't want to give tips over the phone because they don't want there to be any record.
+
+(quote).
+
+
+------------------ takeaways
+
+To wrap up
+
+Takeaways
+
+1. Relationships and communication are critical for modern conservancies
+
+For their own survival, lots of environmental institutions put a lot of work into relationship-builing with locals.
+
+(next)
+
+2. Our early work serves as a proof of concept
+
+That mobile phone services could be helpful for some aspects of this problem.
+
+There actually are a lot of cases when people want to talk to their local conservancies.
+
+(next)
+
+and
+3. Conservancy contexts have particular challenges for phone service deployments.
+
+
+------------------------- Challenges
+
+What are these challenges?
+
+- Relationship building and careful diplomacy are crucial for conservancies and their local people, and things can be particularly sensitive
+
+- Short text messages have potential for miscommunication, which is particularly important in these somewhat volatile situations
+
+- Broad, inclusive reach and accessability is important
+
+- There are security issues, especially for topics like poaching
+
+- And a lot of conservation institutions simply don't have IT staff; or have the technical capacity to deploy something like this.
+
+
+------------------------------- Future work
+
+- So for future work, we have a lot more design and system building work to do. What kinds of program design, recruitment, and messaging strategies are most effective?
+
+- We think that phone services could be a key for engaging young people, who the conservancy has struggled to reach.
+
+- Eventually, we need to do some more rigerous evaluation work, to know if we can reccomend this approach to other conservancies. Does this actually improve community relations and service provision? Is it cost-effective?
+
+Lastly, we need more work to know how generalizable and scalable this work is, and how to adapt it for other conservancies' models of community engagement.
+
+
+
+---------------------------------- Thanks!
+
+Thanks! I haven't made a thankyou slide yet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- improve service provision
+- provide authoritative source of info
+- targeted information, to communities that benefit
+- feedback, know about issues in the communities and improve accountability
+- 
+
+Did it work? Kind of. Our prelimiary work seems to show some exiting potential but also some limitations.
+
+What it can do--
+It is reaching people
+- authoritative source
+- engage youth
+
+What it can't do--
+- SAPA
+- potential for misunderstanding
+
+
+
+
+
+
+
+
+
+------------------------------------------
+Ol Pejeta and many other conservancies are shifting to a model that recognizes the pourous boundaries of the formal protected areas. 
+
+The local communities share the same water, the same soil, and the same pollinators with the conservancy, and these resources need to be managed together. Human-wildlife conflict is a problem everywhere.
+
+
+SMS has not been a good medium for capturing more latent issues that are still important; people aren't motivated to send messages unless there's something urgent and pressing today.
+- Interestingly, new users are continuing to send messages even after Ol Pejeta stopped advertising the number, so community members are sharing the number peer-to-peer.
+
+- Lots of conservancies are shifting to models that recognize the pourous boundaries of the formal protected areas. 
+- Human-wildlife conflict is an problem nearly everywhere,
+- and climate change and population growth are increasing the pressures on resources that the conservancies share with like communities, like water and pollinators. 
+
+
+- especially where conservation is imposed on people by powerful outsiders.
+- 
+- and local people often don't recieve the promised benefits of economic development.
+
+- 
+
+
+They hold regular open meetings in each village and communicate with local leaders daily
+- to ensure that local people have decision-making power.
+
+- But a lot of people A lot of community members find it prohibitively annoying to send SMS, particularly elders.
+
