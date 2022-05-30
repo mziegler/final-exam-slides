@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -120,41 +120,73 @@
 	            border-width: 23px;
 	            margin-top: -23px;
             }
+            
+            
+   			#roadmap {
+					font-size:80%;
+					border-spacing: 1px;
+					border-collapse: separate;
+					border-spacing: 5px !important;
+				}
+				
+				#roadmap tr td:last-child {
+					font-size:65%;
+					vertical-align:middle;
+				}
+				
+				#roadmap td.c {
+					color: #003049/*#A36A00 /* orange #D18700 /*#A69000; /*#2f2440*/;
+				}
+				
+				#roadmap td.p {
+					color: #d62828/*#961316*/;
+				}
+			
+				#roadmap tr.selected td, #roadmap tr td.selected {
+					color: rgba(255,255,255,0.9) !important;
+					background-color: #003049/*#6f5b3e #702F00*/ !important;
+				}
+			
+				#roadmap td {
+					/*border: solid 10px white;*/
+					border: 0;
+
+					background-color: #f7f3de/*#EEE*/;
+				}
+				
+				#roadmap td.vert {
+					writing-mode: vertical-rl; 
+					font-size:80%; 
+					padding-right:1.5em;
+					padding-left:0.5em;
+					padding-top:-0.5em
+				}
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 
-					<section data-background-image="img/ussd-jiko-wide-toppadded-extendedsky.jpg" style="color:black" data-transition="fade">
-						<h3 style="color:black">Mobile Phones and <br>Conservancy Communities</h3>
-						<div class="authors" style="font-size:65%">
-							<span>Matt Ziegler,</span>
-							<span>Morgan Wack,</span>
-							<span>Nancy Ingutia,</span>
-							<span>Ian Muiruri,</span>
-							<span>Nicholas Njogu,</span>
-							<span>Kennedy Muriithi,</span>
-							<span>William Njoroge,</span>
-							<span>James Long,</span>
-							<span>Kurtis Heimerl</span>
-						</div>
-						<div id="institutions">
-							<img src="img/ol-pejeta-logo.png" style="background:none; width: 20%; height: auto; vertical-align: middle;"> 
-							<img src="img/uw-logo.png" style="background:none; background:none; width: 35%; height: auto; vertical-align:-45%; margin-left:1em">
-						</div>
-						<div class="stretch"></div>
+					<section data-background-color="#000" data-background-image="ermap-pictures/geo-background-6.png">
+						<h3>Communication Technology and Environmental Institutions</h3>
+						
+						<small>Matt Ziegler &mdash; General Exam, May 2022</small>
 						
 					</section>
+					
+					<section>
+						<h4>Environmental Problems are Social</h4>
+						<img class="stretch" src="img/tradgedy.jpeg">
+					</section>
 
-					<section data-background-image="img/slide-backgrounds/baboons.jpg" style="color:black">
-						<section>
+					<section data-background-image="img/slide-backgrounds/baboons.jpeg" data-background-opacity="1" style="color:black">
+						<section data-background-image="img/slide-backgrounds/baboons.jpg" data-background-color="#000" data-background-opacity="1">
 							
 						</section>
 
-						<section style="color:black" data-background-image="img/slide-backgrounds/baboons.jpg" data-background-color="#000" data-background-opacity="0.3">							
+						<!--<section style="color:black" data-background-image="img/slide-backgrounds/baboons.jpg" data-background-color="#000" data-background-opacity="0.3">							
 							<img class="stretch" src="img/yosemite.jpg">
-						</section>
+						</section>-->
 
 						<section style="color:black" data-background-image="img/slide-backgrounds/baboons.jpg" data-background-color="#000" data-background-opacity="0.3">
 							<img src="img/conflict-headline-big-1.png">
@@ -167,311 +199,499 @@
 					<section data-background-color="#888" data-background-image="img/community-mosaic.png" data-backgroun-size="cover">
 						
 					</section>
-
-
-					<section data-background-color="white" data-background-transition="slide" style="color:black">
-						<h3 style="color:black">Communication</h3>
-						<img class="stretch" style="border:0" src="img/community-map.png">
-						<ul class="dashed" style="margin-top:50px;">
-							<li>35,000 people within 5km</li>
-							<li>Travel is difficult</li>
-							<li>Communication is hard</li>
-						</ul>
-					</section>
-
-					<section data-background-color="#888" data-background-image="img/workshop.jpeg">
-						<section>
-							
-						</section>
-
-						<section>
-							<div style="background:rgba(0,0,0,0.7);padding:20px 100px; display:inline-block; border-radius:10px;">
-								<h4>Can basic phone services...</h4>
-								<ul style="list-style-type: none !important;">
-									<li>...improve service delivery?</li>
-
-									<li>...build relationships?</li>
-
-								</ul>
-
-								<br>
-								<div class="fragment">
-									<hr color="white">
-									<ul class="dashed">
-										<li>Feedback</li>
-										<li>Credible information</li>
-										<li>Improving reach</li>
-										<li>Accountability</li>
-									</ul>
-								</div>
-								
-
-								<!--<small class="fragment">Collect&nbsp;feedback &bull;&nbsp;Authoritative&nbsp;information&nbsp;source &bull;&nbsp;Improve&nbsp;reach &bull;&nbsp;Accountability</small>-->
-							</div>
-						</section>
-
-						<section>
-							<div style="background:rgba(0,0,0,0.7);padding:20px 100px; display:inline-block; border-radius:10px;">
-								<h3>Methods</h3>
-								<ul class="dashed">
-									<li>Community focus groups</li>
-									<li>Staff interviews</li>
-									<li>Technology pilots</li>
-								</ul>
-							</div>
-						</section>
-
-					</section>
-
-					<section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.6"
-								data-background-color="#DDD" style="color:black">
-						<section>
-							<h3 style="color:black">Communication is hard</h3>
-							<!--I get calls from communities every day, every night, even on weekends-->
-							Extremely resource intensive<br><br>
-
-							<blockquote class="fragment" style="background:rgba(250, 250, 250, 0.6); font-size:80%">
-								&ldquo;People call us asking the same questions over and over again. We answer a thousand calls about the simplest thing.&ldquo;
-								<div style="text-align: right;">&mdash; Staff</div>
-							</blockquote>
-
-							<blockquote class="fragment" style="background:rgba(250, 250, 250, 0.6); font-size:80%">
-								&ldquo;We call the veterinarian who does artificial insemination, and he gives us the updates.&rdquo;
-								<div style="text-align: right;">&mdash; Community member</div>
-							</blockquote>
-						</section>
-						<!--If people don’t see us regularly, they will think we have abandoned them. People needto see that we are concerned with their welfare, not that we justcome when we want something.
-
-						after the meetings, peoplewere more likely to call us to report problems and violations. . .We found that it’s been important to bring all stakeholderstogether, like every 3 months. It’s been very effective.”
-
-						youths were too busy working during the days, and thatthey felt that the meetings were more for elders:“if you wantyouths to come, you should tailor the meetings for youths.” -->
-						<section data-background-image="img/slide-backgrounds/chuma1.jpg" data-background-opacity="0.3"
-						data-background-color="#DDD"">
-						<ul class="dashed">
-							<li class="fragment">
-								Relationship building
-								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
-									&ldquo;If people don’t see us regularly, they'll think we have abandoned them. People need to see that we're concerned with their welfare, not that we just come when we want something.&rdquo;
-									<div style="text-align: right;">&mdash; Staff</div>
-								</blockquote>
-							</li>
-
-
-							<li class="fragment">
-								Expectation management
-								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
-									&ldquo;You have to be so so careful about managing expectations.
-									You say something, people understand the wrong thing, and expect something else. You can get really screwed up.
-									&rdquo;
-									<div style="text-align: right;">&mdash; Staff</div>
-								</blockquote>
-							</li>
-
-							<li class="fragment">Misinformation</li>
-
-							<li class="fragment">Young people are hard to reach</li>
-						</ul>
-						</section>
-					</section>
-
-					<section style="color:black" data-background-image="img/slide-backgrounds/mtkenya-pole.jpg" data-background-color="#DDD" data-background-opacity="0.5">
-						<h3 style="color:black">SMS Broadcast</h3>
-						<ul class="dashed">
-							<li>Announcements to 3,000 phone numbers<br>
-								<small>Job postings, community meeting dates, health outreach dates</small>
-							</li>
-
-							<li class="fragment">
-								Annecdotal evidence for success<br>
-								<small>More job applications, higher meeting and health outreach attendance</small>
-							</li>
-
-							<li class="fragment">
-								Mismatch: young people don't get SMS
-								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
-									&ldquo;I can see when I have an SMS from Ol Pejeta, so I give it to my son to tell me what it says.&rdquo;
-									<div style="text-align: right;">&mdash; Community elder</div>
-								</blockquote>
-							</li>
-						
-							<li class="fragment">
-								Occasional misunderstandings
-							</li>
-							<!--A lot of people don’t have anyone to readmessages for them.  Sometimes an old person comes to mebecause their phone’s memory is full of messages and theydon’t know what to do. I help them delete the messages, andthey haven’t opened any of them.
-						
-
-							we don’t knowhow our text messages are perceived by our communities.-->
-						</ul>
-					</section>
-
-					<section data-background-color="white">
-						<section data-background-color="#ECE5DD" style="color:black">
-							<h5 style="color:black; margin-bottom:10px">Two-way SMS hotline</h5>
-	
-							<small >Example messages</small>
-	
-							<blockquote class="sms-convo sms-convo-patient" style="margin-top:0px">
-								Dear ol pejeta consaverncy am a community member but ai whant inform you if it is an any varncy just inform ifen a fance ripear and security patrol thanks
-							</blockquote>
-							<blockquote class="sms-convo sms-convo-patient" style="border-top-right-radius:0; border-bottom-right-radius:0">
-								10 Erephants ware patroling kijabe thd whole night pls.
-							</blockquote>
-							<blockquote class="sms-convo sms-convo-patient">
-								Goodafternoon am a resindent of [redacted] and am borthed by a sheep diseases that afect lamps coursing small woulds aroud  mouth.
-							</blockquote>
-							<blockquote class="sms-convo sms-convo-patient">
-								My Name is [redacted] am farming nearest to u here on the river whow can u helpers from these monkey theru inaharimbu everything in the shamba
-							</blockquote>
-							<blockquote class="sms-convo sms-convo-patient">
-								Am a guardian from [redacted] and my sister achieved 332 marks how can I get a scholarship form?
-							</blockquote>
-	
-						</section>
-
-						<section data-background-color="white">
-							<h5 style="color:black">1 year: 344 messages from 170 users</h5>
-							<img style="box-shadow:none" class="stretch" src="img/paper-figures/sms-usage-singlecol-presentation.png">
-	
-							<!--<blockquote class="fragment" style="color:black;background:#EEE; font-size:70%;">
-								&ldquo;I didn't have anything funny to say&rdquo;
-								<div style="text-align: right;">&mdash; Community member</div>
-							</blockquote>-->
-
-						</section>
-						
-
-						
-					</section>
-
 					
-					<section data-background-color="#fff" data-background-transition="slide">
-						<section data-background-video="img/ussd-2.m4v" data-background-size="contain" data-background-video-muted="true" data-background-color="black">
-						</section>
+					<!--<section>
+						<p>How is communication technology shaping environmental institutions elsewhere?</p>
+						
+					</section>-->
+					
+					<section>
+						<h3>Thesis structure</h3>
+						
+						<table id="roadmap">
+							<tr><td colspan="2">Related Work</td><td class="p">In progress</td></tr>
+							<tr>
+								<td rowspan="3" class="vert">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							<tr><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+						
+					</section>
+					
+					
+					<section data-background-color="#000" data-background-image="ermap-pictures/geo-background-2.png">
+						<h3>Thesis contributions</h3>
+						<ol style="padding-left:2em;">
+							<li class="fragment">Technology design space</li>
+							<li class="fragment">Effects of communication technology on environmental institutions</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Road map</h3>
+						<table id="roadmap">
+							<tr class="selected"><td colspan="2">Related work</td><td class="p">In progress</td></tr>
+							<tr>
+								<td rowspan="3" class="vert">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							<tr><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+					</section>
+					
+					<section>
+						<img class="stretch" src="img/relatedwork-venndiagram-5.png">
+					</section>
+					
+					<section style="font-size:60%" data-background-image="ermap-pictures/geo-background-1.png">
+						<div style="background:rgba(255,255,255,0.9); padding:2em; border-radius:4px">
+						<h2>Environmental CS Genres</h2>
+						
+						<div style="width: 49%; display:inline-block; text-align: left;">
+							<p style="font-weight:bold;margin-bottom:0">Research & monitoring</p>
+							<ul class="dashed">
+								<li>Sensing</li>
+								<li>Modeling</li>
+								<li>Decision support</li>
+								<li>Biodiversity informatics</li>
+								<li>Anti-poaching</li>
+							</ul><br>
+							
+							<p style="font-weight:bold;margin-bottom:0">Energy</p>
+							<ul class="dashed">
+								<li>Efficient computing</li>
+								<li>Renewables</li>
+								<li>Business / institutional efficiency</li>
+							</ul><br>
+							
+							<p style="font-weight:bold;margin-bottom:0">Agriculture</p>
+							<ul class="dashed">
+								<li>Extension / education</li>
+								<li>Sensing applications</li>
+								<li>Permaculture planning</li>
+							</ul>
+						</div>
+						<div style="width: 49%; display: inline-block; text-align:left">
+							<p style="font-weight:bold;margin-bottom:0">Urbanism</p>
+							<ul class="dashed">
+								<li>Smart cities / buildings</li>
+								<li>Pollution monitoring</li>
+								<li>Transit</li>
+								<li>Urban planning</li>
+							</ul>
+							
+							<p style="font-weight:bold;margin-bottom:0">Individual behavior change</p>
+							<ul class="dashed">
+								<li>Ambient awareness</li>
+								<li>Self-tracking</li>
+							</ul>
+							
+							<p style="font-weight:bold;margin-bottom:0">Governance / Collective change</p>
+							<ul class="dashed">
+								<li>E-governance</li>
+								<li>Community sensing</li>
+								<li>Participatory mapping</li>
+								<li>Social media</li>
+							</ul>
+						</div>
+						</div>
+					</section>
+					
+					
+					<section data-background-image="img/slide-backgrounds/chuma1.jpg">
+						<div style="background-color:rgba(255,255,255,0.95);padding: 1em 0;border-radius:4px">
+						<h2>ICTD<h2>
+						<small style="font-size:50%"	>Theory &bull; Methodology &bull; Technology Affordances</small>
+						
+						<div class="fragment" style="font-size:50%">
+							<ul class="dashed">
+								<li class="fragment">
+									Semi-automated SMS Nurse Hotline<br>
+									<small style="margin-left:3em;display:block">Perrier et. al. 2015</small>								
+								</li>
+								<li class="fragment">
+									User-moderated interactive voice forums
+									<small style="margin-left:3em;display:block">Vashistha et. al. 2015</small>
+								</li>
+								<li class="fragment">
+									Participatory Video for Agriculture Extension<br>
+									<small style="margin-left:3em;display:block">Gandhi et. al. 2015</small>
+								</li>
+								
+							</ul>
+						</div>
+						</div>
+					</section>
+					
+					<section>
+						<h3>Road map</h3>
+						<table id="roadmap">
+							<tr><td colspan="2">Related work</td><td class="p">In progress</td></tr>
+							<tr class="selected">
+								<td rowspan="3" class="vert">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							<tr><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+					</section>
+					
+					
+					<section data-background-color="#888; color:white" data-background-image="img/workshop.jpeg">
 
+						<div class="stretch"></div>
+						<div style="background-color:white; border-radius:3px; padding:0.7em; padding-bottom:0">
+							<h4>Design probe 1:<br>Wildlife Conservancy Community Outreach</h4>
+							<small>&#9733; Best paper at COMPASS 2020 &#9733;</small>
+						</div>
+					</section>
+						
+					<section style="color:black" data-background-image="img/slide-backgrounds/mtkenya-pole.jpg" data-background-color="#DDD" data-background-opacity="0.5">
+
+							<h4 style="">Can basic phone services...</h4>
+							<ul style="list-style-type: none !important;">
+								<li>...improve service delivery?</li>
+
+								<li>...build relationships?</li>
+
+							</ul>
+
+							<br>
+							<div class="fragment">
+								<hr>
+								<ul class="dashed">
+									<li>Feedback</li>
+									<li>Credible information</li>
+									<li>Improving reach</li>
+									<li>Accountability</li>
+								</ul>
+
+
+							
+
+							<!--<small class="fragment">Collect&nbsp;feedback &bull;&nbsp;Authoritative&nbsp;information&nbsp;source &bull;&nbsp;Improve&nbsp;reach &bull;&nbsp;Accountability</small>-->
+						</div>
+
+					</section>
+					
+					<section data-background-color="#ECE5DD" style="color:black">
+						<h5 style="color:black; margin-bottom:10px">Two-way SMS hotline</h5>
+
+						<small >Example messages</small>
+
+						<blockquote class="sms-convo sms-convo-patient" style="margin-top:0px">
+							Dear ol pejeta consaverncy am a community member but ai whant inform you if it is an any varncy just inform ifen a fance ripear and security patrol thanks
+						</blockquote>
+						<blockquote class="sms-convo sms-convo-patient" style="border-top-right-radius:0; border-bottom-right-radius:0">
+							10 Erephants ware patroling kijabe thd whole night pls.
+						</blockquote>
+	 					<blockquote class="sms-convo sms-convo-patient">
+							Goodafternoon am a resindent of [redacted] and am borthed by a sheep diseases that afect lamps coursing small woulds aroud  mouth.
+						</blockquote>
+						<blockquote class="sms-convo sms-convo-patient">
+							My Name is [redacted] am farming nearest to u here on the river whow can u helpers from these monkey theru inaharimbu everything in the shamba
+						</blockquote>
+						<blockquote class="sms-convo sms-convo-patient">
+							Am a guardian from [redacted] and my sister achieved 332 marks how can I get a scholarship form?
+						</blockquote>
+
+					</section>
+					
+					
+					<section data-background-image="img/ussd-jiko-wide-toppadded.jpg">
 						<section>
-							<h3 style="color:black">Ol Pejeta Community USSD</h3>
-							<img class="stretch" style="box-shadow:none" src="img/concept.jpg">
+						<h3>USSD Pilot</h3>
+						<div class="stretch"></div>
 						</section>
+						
 
-						<section data-background-image="img/slide-backgrounds/road1.jpg" data-background-opacity="0.5"
-						data-background-color="#DDD">
+						
+						<section data-background-opacity="0.2"
+						data-background-color="#222" data-background-image="img/ussd-jiko-wide-toppadded.jpg">
 							<img style="box-shadow:none" src="img/paper-figures/ussd-listprojects.png">
 							<img style="box-shadow:none" src="img/paper-figures/ussd-bursarymenu.png">
 							<img style="box-shadow:none" src="img/paper-figures/ussd-registerapplication.png">
 									<!--img style="box-shadow:none" src="img/paper-figures/ussd-jiko.png"-->
 
 						</section>
-
-						<section data-background-image="img/slide-backgrounds/road1.jpg" data-background-opacity="0.5"
-						data-background-color="#DDD">
-							<div style="background-color:#FFF; padding:50px; display:inline-block; border-radius:20px;">
-								<h5 style="color:black">1 month: 850 calls from 256 users</h5>
-								<img style="box-shadow:none" src="img/paper-figures/ussd-daily-usage-wider.png"><br>
-								<img style="box-shadow:none" src="img/paper-figures/ussd-screens-per-session-wider.png"><br>
-								<img style="box-shadow:none" src="img/paper-figures/ussd-sessions-per-user-wider.png"><br>
-							</div>
-						</section>
-
-						
 					</section>
-	
-					<section style="color:black" data-background-color="white" data-background-image="img/slide-backgrounds/river.jpg" data-background-opacity="0.3">
-						<ul class="dashed">
-							<li class="fragment">
-								Heterogeneous phone access and preferences
-								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%;">
-									&ldquo;I only text on a need basis&rdquo;
-									<div style="text-align: right;">&mdash; Community elder</div>
-								</blockquote>
-							</li>
-
-							<li class="fragment">Cost sensitivity</li>
-
-							<li class="fragment" style="margin-top:1em">
-								Security
-								<blockquote style="background:rgba(250, 250, 250, 0.6); font-size:70%; width:90%">
-									&ldquo;	An informer should be treated with the most integrity and confidentiality... the two-way SMS system compromises the security of an informer.
-									&rdquo;
-									<div style="text-align: right;">&mdash; Staff</div>
-								</blockquote>
-							</li>
+					
+					<section data-background-image="img/slide-backgrounds/plant.jpg" data-background-opacity="0.2" data-background-color="#000">
+						<div style="color:white">
+							<h3 style="color:white">Takeaways</h3>
 							
-						</ul>
-					</section>
-
-
-					<section data-background-image="img/slide-backgrounds/plant.jpg" data-background-color="black" data-background-opacity="0.7" style="color:white">
-						<section>
-							<div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
-									<span style="vertical-align: baseline; font-size:145%;font-weight:bold">Takeaways</span>
-									<span style="vertical-align: 10%; font-size:70%; opacity:0.7">&rarr; Challenges</span> 
-									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;"> &rarr; Future work</span>
-								<br><br>
-								<ol>
-									<li class="fragment" style="margin-bottom:0.5em">Relationships and communication are critical for many modern conservancies</li>
-									<li class="fragment" style="margin-bottom:0.5em">Proof of concept: mobile phone services could help in some places </li>
-									<li class="fragment">Conservancy contexts have particular challenges for phone service deployments</li>
-								</ol>
-							</div>
-						</section>
-						<section>
-							<div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
-									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;">Takeaways &rarr;</span>
-									<span style="vertical-align: baseline; font-size:145%;font-weight:bold">Challenges</span> 
-									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;"> &rarr; Future work</span>
-								<br><br>
-								<ul class="dashed">
-									<li class="fragment">Relationships and diplomacy are crucial</li>
-									<li class="fragment">Potential for miscommunication</li>
-									<li class="fragment">Accessibility</li>
-									<li class="fragment">Security</li>
-									<li class="fragment">Institutional capacity</li>
-								</ul>
-							</div>
-						</section>
-						<section>
-							<div style="background-color:rgba(0,0,0,0.8); padding:50px; display:inline-block; border-radius:20px;">
-									<span style="vertical-align: 10%; font-size:70%; opacity:0.7;">Takeaways &rarr;</span>
-									<span style="vertical-align: 10%; font-size:70%; opacity:0.7">Challenges &rarr; </span> 
-									<span style="vertical-align: baseline; font-size:145%;font-weight:bold">Future work</span>
-								<br><br>
-								<ul class="dashed" style="margin-left:-20px">
-									<li class="fragment">
-										Design and system building<br>
-										<small style="margin-left:2.6em">Program design &bull; Recruitment &bull; Messaging strategy</small>
-									</li>
-									<li class="fragment" style="margin-top:0.7em">Engaging youth</li>
-
-									<li class="fragment" style="margin-top:0.7em">
-										Evaluate: 
-										<ul class="dashed" style="font-size:70%">
-											<li>Does it improve community relations?</li>
-											<li>Does it improve service provision?</li>
-											<li>Is it cost-effective?</li>
-										</ul>
-									</li>
-										
-									<li class="fragment" style="margin-top:0.7em">Generalize & scale</li>
-								</ul>
-							</div>
-						</section>
-					</section>
-
-					<section data-background-image="img/slide-backgrounds/rhinos.jpg" data-background-size="cover" data-background-color="black">
-						
-						<div style="background:rgba(255,255,255,0.7); padding: 10px; border-radius:5px; width:60%; margin-left: auto; margin-right: auto;">
-							<h2 style="color:black">Thanks!</h2>
-
-							<div style="vertical-align: middle; display:inline-block; margin-right:1em; width:40%">
-							<img src="img/ol-pejeta-logo.png" style="background:none; width: 100%; height: auto; margin:0">
-							<div style="display:block; text-align:left; font-size:40%; color:black; margin-top:-7px; padding-left:8px; opacity:0.9">Conservation Tech Lab</div>
-							</div>
-
-							<img src="img/uw-logo-stacked.png" style="background:none; background:none; width: 30%; height: auto; vertical-align:middle;">
-
+							<ul class="dashed">
+								<li class="">Relationships and diplomacy are crucial</li>
+								<li class="">Proof of concept</li>
+								<li class="">Challenges
+									<ul class="fragment dashed" style="padding-left:2em;">
+										<li class="">Potential for miscommunication</li>
+										<li class="">Accessibility</li>
+										<li class="">Security</li>
+										<li class="">Institutional capacity</li>
+									</ul>
+								</li>
+								
+							</ul>
 						</div>
-						<div class="stretch"></div>
 					</section>
+					
+					<section>
+						<h3>Road map</h3>
+						<table id="roadmap">
+							<tr><td colspan="2">Related work</td><td class="p">In progress</td></tr>
+							<tr>
+								<td rowspan="3" class="vert selected">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr class="selected"><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							<tr><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+					</section>
+					
+					
+					
+	
+					
+					<section data-background-color="#000" data-background-image="img/slide-backgrounds/hangar.jpg" data-background-opacity="0.2">
+						<section>
+						<h3>Design probe 2: Anti-Poaching Hotline</h3>	
+							<style>
+								.hotline-poster{
+									width:20%;
+									height: auto;
+									display: inline-block;
+									border: solid #000 6px !important;
+									margin:0 !important;
+								}
+							</style>
+							<img src="img/hotline-posters/poster-1.png" class="hotline-poster">
+							<img src="img/hotline-posters/poster-2.png" class="hotline-poster">
+							<img src="img/hotline-posters/poster-3.png" class="hotline-poster"><br>
+							<img src="img/hotline-posters/poster-4.png" class="hotline-poster">
+							<img src="img/hotline-posters/poster-5.png" class="hotline-poster">
+							<img src="img/hotline-posters/poster-6.png" class="hotline-poster">
+						</section>
+						
+						<section data-background-color="#000" data-background-image="img/slide-backgrounds/hangar.jpg" data-background-opacity="1"></section>
+						
+						<style>ul.vs-colored span{color:#961316}</style>
+						
+						<section>
+							<h3>Findings / Paradoxes</h3>
+							<ul class="dashed vs-colored">
+								<li class="fragment">Publicity <span>vs.</span> discretion and separation</li>
+								<li class="fragment">Anonymity <span>vs.</span> misdirection</li>
+								<li class="fragment">Direct contact <span>vs.</span> resource constraints</li>
+								<li class="fragment">Limited information about ivory poaching <span>vs.</span> bushmeat and charcoal</li>
+							</ul>
+						</section>
+						
+					</section>
+					
+					<section>
+						<h3>Road map</h3>
+						<table id="roadmap">
+							<tr><td colspan="2">Related work</td><td class="p">In progress</td></tr>
+							<tr>
+								<td rowspan="3" class="vert selected">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr class="selected"><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							
+							<tr><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+					</section>
+					
+					<section data-background-image="ermap-pictures/giraffe-prototype-1.png">
+					
+					<div style="background-color:white;border-radius:4px;padding:1em;padding-bottom:0.7em; border:solid 1px #000;" class="fragment fade-out">
+						<h4>Design probe 3: Wildlife tracking maps and environmental communication</h4>
+						<br><small>&#9733; Honorable mention at COMPASS 2021 &#9733;</small>
+					</div>
+					<div class="stretch"></div>
+					</section>
+
+					<section>
+						<h3>Animal-tracking maps</h3>
+						<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('ermap-pictures/example-ocearch-3.png');width:100%;height:200px;"></div>&copy; OCEARCH</div>
+						<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('ermap-pictures/example-ocearch.png');width:100%;height:200px;"></div>&copy; OCEARCH</div>
+						<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('ermap-pictures/example-monkey-4.png');width:100%;height:200px;"></div>&copy; Wild Capuchin Foundation</div>
+						<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('ermap-pictures/example-motus.png');width:100%;height:200px;"></div>&copy; MOTUS</div>
+						<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('ermap-pictures/example-wwf-1.png');width:100%;height:200px;"></div>&copy; WWF</div>
+						<div style="width:30%; display:inline-block; text-align:center;font-size:50%;color:rgba(0,0,0,0.8);padding-bottom:20px"><div style="background-size:cover;background-image:url('ermap-pictures/example-polar-bears-1.png');width:100%;height:200px;"></div>&copy; Polar Bears International</div>
+					</section>
+					
+					<section data-background-image="ermap-pictures/geo-background-7-2.png" style="text-align:left">
+					<h3>Environmental Comms. Best Practices</h3>
+					<ul>
+						<li class="">Emotions: cultivate hope, avoid anxiety</li>
+						<li class="">Conversations towards collective action</li>
+						<li class="">Continuous awareness</li>
+						<li class="">Relationships with audience</li>
+						<li class="">Avoid controversy to broaden participation</li>
+						<li class="">Relatability: tell local stories, focus on people</li>
+					</li>
+				</section>
+					
+					<section data-background-image="ermap-pictures/geo-background-5.png" style="color:white">
+					<h2 style="color:white">Findings</h2>
+					<h4 style="color:white">User study & conservationist interviews</h4>
+					<ul style="font-size:85%">
+						<li class="fragment">Data is not relatable &mdash; Integration with other media is key</li>
+						<li class="fragment">Continuously engage dedicated audiences with updates</li>
+						<li class="fragment">Show off organization's work &mdash; Inspire optimism</li>
+						<li class="fragment">Attract casual audiences to other communication channels</li>
+						<li class="fragment">Details &amp; recommendations in paper</li>
+					</ul>
+				</section>
+					
+					<section>
+						<h3>Road map</h3>
+						<table id="roadmap">
+							<tr><td colspan="2">Related work</td><td class="p">In progress</td></tr>
+							<tr>
+								<td rowspan="3" class="vert">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							
+							<tr class="selected"><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+					</section>
+					
+					<section data-background-image="ermap-pictures/geo-background-3.png">
+						<div style="background:rgba(255,255,255,0.9); border-radius:4px; padding: 1em">
+						<h3>Cross-sectional interviews</li>
+						<h4>Methods</h4>
+						<ul style="dashed">
+							<li class="fragment">Inclusion criteria:
+								<ol>
+									<li>Work at an environmental instition</li>
+									<li>Interact with communities</li>
+								</ol>
+							</li>
+							<li class="fragment">22 interviews so far: 17 India, 6 Uganda, 2 USA</li>
+							<li class="fragment">90-minute Zoom interviews, semi-structured</li>
+							<li class="fragment">Interview questions informed by design probes</li>
+						</ul>
+						</div>
+					</section>
+					
+					<section data-background-image="ermap-pictures/geo-background-desert-1.png">
+						<h3>Cross-sectional interviews</h3>
+						<h4>Preliminary findings</h4>
+						<style>
+							div.triad {
+								width: 25%;
+								height: 80%;
+								background-color: rgba(255,255,255,0.9);
+								padding: 0.5em;
+								border-radius: 4px;
+								display: inline-block;
+								font-size:70%;
+								vertical-align: top;
+							}
+							
+							.triad li {padding-bottom:0.3em}
+						</style>
+						
+						<div class="stretch">
+						
+							<div class="triad">
+								<h3>Urban</h3>
+								<ul class="fragment">
+									<li>social media</li>
+									<li>advertising</li>
+									<li>group conversations</li>
+									<li>multimedia</li>
+								</ul>
+							</div>
+							
+							<div class="triad">
+								<h3>Rural</h3>
+								<ul class="fragment">
+									<li>project coordination</li>
+									<li>point people</li>
+									<li>accountability</li>
+									<li><b>no</b> mass communication over ICT's</li>
+								</ul>
+							</div>
+							
+							<div class="triad">
+								<h3>Remote</h3>
+								<ul class="fragment">
+									<li>limited connectivity</li>
+									<li>relaying messages</li>
+									<li>liasing with government</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!--<ul style="dashed">
+							<li><b>Urban</b> <span class="fragment">&rarr; social media, advertising, group conversations, multimedia</span></li>
+							<li><b>Rural</b> <span class="fragment">&rarr; project coordination, point people, <i>no</i> mass communication over ICT's</span></li>
+							<li><b>Remote</b> <span class="fragment">&rarr; limted connectivity, liasing with government, relaying messages</span></li>
+						</ul>-->
+					</section>
+					
+					<section data-background-image="ermap-pictures/geo-background-desert-2.png">
+						<h4>Cross-sectional interviews</h4>
+						<h3>Technology's impact on social factors</h3>
+						<div style="background:rgba(255,255,255,0.9);padding:1em;border-radius:4px">
+						<ul style="dashed">
+							<li class="fragment" style="margin-bottom:0.3em"><b>Trust</b> <span class="">&rarr; start relationships in person, keep in touch, credibility, intimidation</span></li>
+							<li class="fragment" style="margin-bottom:0.3em"><b>Inclusion</b> <span class="">&rarr; 	no positive or negative effect; reflected existing inequities</span></li>
+							<li class="fragment" style="margin-bottom:0.3em"><b>Formalization</b> &rarr; more structured interactions, top-down control, hard to get rich information</li>
+						</ul>
+						</div>
+					</section>
+					
+					<section>
+						<h3>Thesis structure</h3>
+						<table id="roadmap">
+							<tr><td colspan="2">Related work</td><td class="p">In progress</td></tr>
+							<tr>
+								<td rowspan="3" class="vert">Design probes&nbsp;</3>
+								<td>Rural wildlife conservancy outreach</td><td class="c">Completed</td></td>
+							</tr>
+							<tr><td>Anti-poaching hotline</td><td class="p">In progress</td></tr>
+							<tr><td>Public wildlife-tracking maps</td><td class="c">Completed</td></tr>
+							
+							<tr class=""><td colspan="2">Cross-sectional interview study</td><td class="p">In progress</td></tr>
+						</table>
+					</section>
+					
+					<section data-background-image="img/ictd-faces.png" data-background-color="white" data-background-size="contain" data-background-position="top">
+					
+					<div class="stretch"></div>
+					<h2>Thanks!</h2>
+						
+					</section>
+				
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+					
 
 				
 
@@ -494,10 +714,53 @@
 				progress: false,
 				hash: true,
 				pdfSeparateFragments: false,
-				controls:true,
+				controls:false,
 				//showSlideNumber: 'all',
 				slideNumber: false,
 			});
 		</script>
+		
+		
+		<div style="display:none">
+			
+	main objective is selling this idea to Magda
+	trailblazing all these new important ideas
+	trying to pitch ICTD as having worked on a lot of associated problems
+	add a slide about ICTD as an intellectual angle to this
+	
+	nix things that are too distracting
+	-- like yosemite slide
+	-- still talk about the colonial aspects, but really rehearse how I do it
+	-- say it's not one park in one country, but all over the world. say it's generalizable
+	-- don't suck the oxygen out of the room
+	-- say it's climate change, not 
+	
+	-- be careful not to over-promise social theory stuff
+	-- kurtis says related work is important
+	
+	-- waylon got lost on urban/rural/remote stuff; should have a slide for each one
+	
+	-- venn diagram for related theorhetical work areas?
+	-- talk about gap in CS research; then talk about how ICTD has methods and stuff to fill it in but hasn't addressed conservation stuff
+	
+	
+	-- look at philip and esther remoteness paper
+	
+	-- define what is communication technology. Is there a focus on your work, or is all accross them, what is the kind
+	-- have a slide abbout "all these technologies", whatsapp, data visualizations, etc.
+	
+	-- wanted to see the answer of how are they using the technology to negotiate these relationships, after I set up this whole question I don't really answer it.
+	
+	-- more of an equity perspective of who do we empower. set up this question, and then didn't really answer it.
+	
+	-- for generals talk, I don't neccesarily need the answers; I just need to have a plan for how to get the answers.
+	-- say how it contributes to the discussion; how it is one lens adding up to the bigger picture.
+	
+	-- these tools exist, but haven't been customized for environmental contexts.
+	---- tie this back when I talk about ICTD
+	
+	its more of a clarification than a question -- i just have a question about communication technology vs. technologies and if you look at a group of them.. 
+		</div>
 	</body>
+
 </html>

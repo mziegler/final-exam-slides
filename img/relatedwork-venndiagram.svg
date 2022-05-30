@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="206.375mm"
+   height="210.53275mm"
+   viewBox="0 0 206.375 210.53275"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="relatedwork-venndiagram.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="164.05996"
+     inkscape:cy="349.0131"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.7797623,-17.675598)">
+    <circle
+       style="fill:#0b7c90;fill-opacity:0.63333333;stroke-width:0.26458332"
+       id="path815"
+       cx="68.791664"
+       cy="82.6875"
+       r="65.011902" />
+    <circle
+       style="fill:#e54330;fill-opacity:0.64761909;stroke-width:0.26458332"
+       id="path815-3"
+       cx="145.14285"
+       cy="82.6875"
+       r="65.011902" />
+    <circle
+       style="fill:#406350;fill-opacity:0.63809527;stroke-width:0.26458332"
+       id="path815-6"
+       cx="145.14285"
+       cy="163.19644"
+       r="65.011902" />
+    <circle
+       style="fill:#f8ea8c;fill-opacity:0.55238097;stroke-width:0.26458332"
+       id="path815-3-7"
+       cx="68.791664"
+       cy="163.19644"
+       r="65.011902" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="45.288857"
+       y="67.568459"
+       id="text4567"><tspan
+         sodipodi:role="line"
+         id="tspan4565"
+         x="45.288857"
+         y="67.568459"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332">Social</tspan><tspan
+         sodipodi:role="line"
+         x="45.288857"
+         y="81.230652"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4569">Computing</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="49.991886"
+       y="172.0506"
+       id="text4567-0"><tspan
+         sodipodi:role="line"
+         x="49.991886"
+         y="172.0506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4569-0">Environmental</tspan><tspan
+         sodipodi:role="line"
+         x="49.991886"
+         y="185.71278"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4616">Governance</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="165.42578"
+       y="72.491684"
+       id="text4567-4"><tspan
+         sodipodi:role="line"
+         x="165.42578"
+         y="72.491684"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4569-1">ICTD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="163.68716"
+       y="169.70726"
+       id="text4567-3"><tspan
+         sodipodi:role="line"
+         x="163.68716"
+         y="169.70726"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4569-9">Institutional</tspan><tspan
+         sodipodi:role="line"
+         x="163.68716"
+         y="183.36945"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:Raleway;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan4620">Theory</tspan></text>
+  </g>
+</svg>
